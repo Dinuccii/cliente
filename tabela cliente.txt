@@ -1,0 +1,82 @@
+create Table VENDEDOR
+(
+COD_VENDEDOR smallint  not null,
+NOME_VENDEDOR char(20) not null,
+SALARIO_FIXO varchar(131514526) not null,
+FAIXA_COMISSAO char(1) not null,
+primary key (CHAVE_VENDEDOR)
+);
+
+ 
+ create Table PRODUTO
+(
+CODIGO_PRODUTO smallint not null,
+UNIDADE char(03) not null,
+DESCRICAO_PRODUTO char(30) not null,
+VAL_UNIT varchar(131514526) not null,
+primary key (CHAVE_PRODUTOS)
+);
+INSERT INTO VENDEDOR
+  
+  (COD_VENDEDOR, NOME_VENDEDOR, SALARIO_FIXO, FAIXA_COMISSAO)
+VALUES
+(2015010101, 'JOSÉ DE ALENCAR, R$ 1.250, 3,5%'),
+(2015010102, 'JOÃO JOSE, R$ 1.250, 2,5%'),
+(2015010103, 'MARIA JOAQUINA,R$ 1.250 , 3,0%');
+
+INSERT INTO VENDEDOR
+  
+  (COD_PRODUTO, UNIDADE, DESCRICAO_PRODUTO, VAL_UNIT)
+VALUES
+(3015810201, '100, 93548, 5'),
+(2915513192,'800 , 86750, 2'),
+(2617017103, '650,92748 , 1');
+
+
+
+
+
+
+
+
+Show Tables PRODUTO
+SELECT*From
+insert into 
+ (COD_VENDEDOR, NOME_VENDEDOR, SALARIO_FIXO, FAIXA_COMISSAO)
+ values 
+ 
+
+(2015010101, 'JOSÉ DE ALENCAR, R$ 1.250, 3,5%'),
+(2015010102, 'JOÃO JOSE, R$ 1.250, 2,5%'),
+(2015010103, 'MARIA JOAQUINA,R$ 1.250 , 3,0%');
+
+
+
+
+
+ create Table PEDIDO
+(
+NUM_PEDIDO integer not null,
+PRAZO_INTREGA smallint not null,
+CODIGO_CLIENTE smallint not null,
+CODIGO_VENDEDOR smallint not null
+);
+Primary key (NUM_PEDIDO)
+Foreigh key (CODIGO_VENDEDOR)
+
+
+
+
+
+ create Table cliente
+(
+CODIGO_CLIENTE smallint not null,
+NOME_CLIENTE char (20),
+ENDERECO  char (30),
+CIDADE  char (15),
+CEP char (08),
+UF char (02),
+CGC char (20),
+IE char (20)
+);
+primary key (CODIGO_CLIENTE));
